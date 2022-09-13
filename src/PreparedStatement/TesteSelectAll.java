@@ -1,4 +1,4 @@
-package PrepareStament;
+package PreparedStatement;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -10,7 +10,7 @@ import java.util.Collection;
 public class TesteSelectAll {
     public static void main(String[] args) throws SQLException {
         Collection<Contato> contatoCollection = new ArrayList<>();
-        String sql = "select * from contato";
+        String sql = "select * from contatos";
 
         Conexao conexao = new Conexao();
 

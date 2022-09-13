@@ -1,4 +1,4 @@
-package PrepareStament;
+package PreparedStatement;
 
 import java.util.Objects;
 
@@ -14,15 +14,12 @@ public class Contato {
         this.telefone = telefone;
     }
 
-    public Contato(Integer id, String nome, String email, String telefone, Integer idade) {
+    public Contato(int id, String nome, int idade, String email, String telefone) {
         this.id = id;
         this.idade = idade;
         this.nome = nome;
         this.email = email;
         this.telefone = telefone;
-    }
-
-    public Contato(int id, String nome, int idade, String email, String telefone) {
     }
 
     @Override

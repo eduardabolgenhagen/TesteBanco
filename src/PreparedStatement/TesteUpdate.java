@@ -1,4 +1,4 @@
-package PrepareStament;
+package PreparedStatement;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -7,7 +7,7 @@ import java.sql.Statement;
 public class TesteUpdate {
 
     public static void main(String[] args) throws SQLException {
-        Contato contato = new Contato(2, "Leonardo", "cabelinho123@netuno.com.br", "00000-0000", 18);
+        Contato contato = new Contato(2, "Leonardo", 18, "cabelinho123@netuno.com.br", "00000-0000");
         String sql = "update contatos set " +
                 "nome = '" + contato.getNome() + "','" +
                 "email = '" + contato.getEmail() + "','" +
