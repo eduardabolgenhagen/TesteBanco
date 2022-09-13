@@ -6,19 +6,23 @@ public class Contato {
     Integer id, idade;
     String nome, email, telefone;
 
-    public Contato(String nome, String email,String telefone, Integer idade) {
+    public Contato(String nome, String email, String telefone, Integer idade) {
         this.id = id;
         this.idade = idade;
         this.nome = nome;
         this.email = email;
         this.telefone = telefone;
     }
-    public Contato(Integer id, String nome, String email,String telefone, Integer idade) {
+
+    public Contato(Integer id, String nome, String email, String telefone, Integer idade) {
         this.id = id;
         this.idade = idade;
         this.nome = nome;
         this.email = email;
         this.telefone = telefone;
+    }
+
+    public Contato(int id, String nome, int idade, String email, String telefone) {
     }
 
     @Override
