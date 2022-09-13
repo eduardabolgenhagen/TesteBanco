@@ -1,11 +1,14 @@
+package Stament;
+
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class TesteDelete {
+public class TesteInsert {
     public static void main(String[] args) throws SQLException {
-        Integer id = 3;
-        String sql = "delete from contatos where id = " + id;
+        Contato contato = new Contato("Vytor", "vytor@netuno.com.br", "00000-0000", 18);
+        String sql = "insert into contatos(nome, email, telefone, idade)" +
+                "values ('" + contato.getNome() + "', '" + contato.getEmail() + "', '" + contato.getTelefone() + "', " + contato.getIdade() + ")";
         Conexao conexao = new Conexao();
         Connection connection = conexao.conectaBD();
         Statement statement = connection.createStatement();

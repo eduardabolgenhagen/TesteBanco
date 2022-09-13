@@ -1,3 +1,5 @@
+package Stament;
+
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -28,6 +30,6 @@ public class TesteSelectAll {
         }
 
         connection.close();
-        return contatoCollection;
+        System.out.println(contatoCollection);
     }
 }
